@@ -167,4 +167,7 @@ end
 -------------------------------------
 
 
-return greyexpandablebutton,assetidformatting
+return {
+	["GEB"] = greyexpandablebutton,
+	["AIF"] = assetidformatting,
+}
