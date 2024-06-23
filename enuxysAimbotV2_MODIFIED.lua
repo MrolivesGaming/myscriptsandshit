@@ -65,6 +65,7 @@ local function CancelLock()
 end
 
 local function GetClosestPlayer()
+	print(Environment.FOVSettings.Amount)
 	if not Environment.Locked then
 		RequiredDistance = (Environment.FOVSettings.Enabled and Environment.FOVSettings.Amount or 2000)
 
@@ -77,10 +78,14 @@ local function GetClosestPlayer()
 
 					local Vector, OnScreen = Camera:WorldToViewportPoint(v.Character[Environment.Settings.LockPart].Position)
 					local Distance = (Vector2(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y) - Vector2(Vector.X, Vector.Y)).Magnitude
-
-					if Distance < RequiredDistance and OnScreen then
+					print(OnScreen)
+					print(Distance)
+					print(RequiredDistance)
+					if OnScreen then
+					if Distance < RequiredDistance  then
 						RequiredDistance = Distance
 						Environment.Locked = v
+					end
 					end
 				end
 			end
