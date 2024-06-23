@@ -1,3 +1,5 @@
+-- cuntcuntcunt
+
 --[[
 
 	Universal Aimbot Module by Exunys © CC0 1.0 Universal (2023)
@@ -19,7 +21,6 @@ local __index = GameMetatable.__index
 local __newindex = GameMetatable.__newindex
 local GetService = __index(game, "GetService")
 print(__index)
-
 --// Services & Functions
 
 local RunService = GetService(game, "RunService")
@@ -38,7 +39,7 @@ local GetPlayers = Players:GetPlayers()
 --// Variables
 
 local RequiredDistance, Typing, Running, ServiceConnections, Animation, OriginalSensitivity = 2000, false, false, {}
-local Connect, Disconnect, GetRenderProperty, SetRenderProperty = __index(game.DescendantAdded").Connect
+local Connect, Disconnect, GetRenderProperty, SetRenderProperty = __index(game, "DescendantAdded").Connect
 
 local UWP = false
 
