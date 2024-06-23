@@ -1,4 +1,4 @@
--- cuntcuntcunt
+--penispenispenis
 
 --[[
 
@@ -303,11 +303,11 @@ end
 
 --// Typing Check
 
-ServiceConnections.TypingStartedConnection = Connect(__index(UserInputService, "TextBoxFocused"), function()
+ServiceConnections.TypingStartedConnection = Connect(UserInputService.TextBoxFocused, function()
 	Typing = true
 end)
 
-ServiceConnections.TypingEndedConnection = Connect(__index(UserInputService, "TextBoxFocusReleased"), function()
+ServiceConnections.TypingEndedConnection = Connect(UserInputService.TextBoxFocusReleased, function()
 	Typing = false
 end)
 
